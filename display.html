@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Display:
+    1. Block
+    - mempunyai property width dan height
+    - lebarnya memenuhi lebar browser
+    - Tersusun kebawah
+
+    1. Inline
+    - tidak memiliki property width dan heigght
+    - lebarnya sesuai isi konten
+    - tersusun kesamping (jika masih memungkinkan)
+
+    3. Inline block
+    - Mempunyai property width dan height
+    - lebar default sesuai isi konten
+    
+    -->
+
+    <!-- Block to Inline-->
+
+    <h3 
+    style="background-color: blue; 
+    color:white;
+     display:inline;
+     ">H3 adalah inline</h3>
+    <h3 
+    style="background-color: violet; 
+    color:white;
+     display:inline;
+     ">H3 adalah inline</h3>
+    <!-- Inline: inline-block punya width dan height tapi default nya sesuai konten -->
+    <h3 
+    style="background-color: blue; 
+    color:white;
+     display:inline-block;
+     width:300px;
+     height:100px;
+     padding:100px
+     ">H3 adalah inline block, bisa adjust width, height dan padding</h3>
+    <h3 
+    style="background-color: violet; 
+    color:white;
+     display:inline-block;
+     width:300px;
+     height:100px
+     ">H3 adalah inline block</h3>
+    
+    <!-- height -->
+    <div style='height:500px; border:10px solid salmon'>
+        <div class="d-inline-block bg-primary h-25 text-white p-3">Height-25</div>
+        <div class="d-inline-block h-50 bg-secondary text-white p-3">Height-50</div>
+        <div class="d-inline-block h-75 bg-success text-white p-3">Height-75</div>
+        <div class="d-inline-block h-100 bg-warning text-white p-3">Height-100</div>
+        <div class="d-inline-block h-auto bg-danger text-white p-3">Height-auto</div>
+    
+    </div>
+    <br><hr>
+</body>
+</html>
